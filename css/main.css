@@ -42,6 +42,12 @@ input, textarea, button {
   border-radius: 0px;
 }
 
+/* line 20, ../scss/base/_base.scss */
+section {
+  #background-color: lightgreen;
+  #margin: 1px;
+}
+
 /* MODULES - Individual site components */
 /* LAYOUTS - Page layout styles */
 /* NavBar */

@@ -16,3 +16,8 @@ ul,li{
 input, textarea, button{
   @include border-radius(0px);
 }
+
+section{
+  #background-color: lightgreen;
+  #margin: 1px;
+}
