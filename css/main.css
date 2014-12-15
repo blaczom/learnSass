@@ -6,6 +6,7 @@
 /* BASE - Base styles, variables, minins, etc */
 /* front colors */
 /* background colors*/
+/* showcase area */
 /* Mixins */
 /* line 1, ../scss/base/_normalize.scss */
 h1, h2, h3, h4, h5 {
@@ -15,6 +16,11 @@ h1, h2, h3, h4, h5 {
 /* line 5, ../scss/base/_normalize.scss */
 .page-header {
   margin-top: 30px;
+}
+
+/* line 9, ../scss/base/_normalize.scss */
+.no-pad-top {
+  padding-top: 0;
 }
 
 /* line 1, ../scss/base/_base.scss */
@@ -43,12 +49,148 @@ input, textarea, button {
 }
 
 /* line 20, ../scss/base/_base.scss */
-section {
-  #background-color: lightgreen;
-  #margin: 1px;
+img.device {
+  width: 100%;
 }
 
 /* MODULES - Individual site components */
+/* lists */
+/* line 3, ../scss/modules/_typography.scss */
+.list, .list-feature {
+  margin-bottom: 30px;
+}
+
+/* line 7, ../scss/modules/_typography.scss */
+.list-feature {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+/* line 13, ../scss/modules/_typography.scss */
+.list-feature li {
+  line-height: 2.2em;
+  border-bottom: 1px solid #cccccc;
+}
+/* line 18, ../scss/modules/_typography.scss */
+.list-feature li:last-child {
+  border: 0;
+}
+
+/* blocks */
+/* line 2, ../scss/modules/_blocks.scss */
+.block, .block-primary, .block-secondary, .block-light, .block-dark {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+/* line 6, ../scss/modules/_blocks.scss */
+.block h3, .block-primary h3, .block-secondary h3, .block-light h3, .block-dark h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* line 14, ../scss/modules/_blocks.scss */
+.block-primary {
+  background: #00aff0;
+  color: #ffffff;
+}
+
+/* line 18, ../scss/modules/_blocks.scss */
+.block-secondary {
+  background: #7fba00;
+  color: #ffffff;
+}
+
+/* line 22, ../scss/modules/_blocks.scss */
+.block-light {
+  background: #e4eef2;
+  color: #666666;
+}
+
+/* line 26, ../scss/modules/_blocks.scss */
+.block-dark {
+  background: #333333;
+  color: #ffffff;
+}
+
+/* line 31, ../scss/modules/_blocks.scss */
+.block-center {
+  text-align: center !important;
+}
+
+/* sections */
+/* line 3, ../scss/modules/_sections.scss */
+section {
+  padding: 30px 0px 0px 0px;
+}
+
+/* line 7, ../scss/modules/_sections.scss */
+.section-showcase {
+  height: 400px;
+  background: url("../img/showcase.jpg") no-repeat top center;
+}
+/* line 11, ../scss/modules/_sections.scss */
+.section-showcase .showcase-content {
+  padding: 90px 15px;
+  text-align: center;
+}
+/* line 16, ../scss/modules/_sections.scss */
+.section-showcase h1 {
+  color: #00aff0;
+}
+
+/* line 21, ../scss/modules/_sections.scss */
+.section-primary {
+  background: #00aff0;
+  color: #ffffff;
+}
+
+/* line 25, ../scss/modules/_sections.scss */
+.section-secondary {
+  background: #7fba00;
+  color: #ffffff;
+}
+
+/* line 29, ../scss/modules/_sections.scss */
+.section-light {
+  background: #e4eef2;
+  color: #666666;
+}
+
+/* line 33, ../scss/modules/_sections.scss */
+.section-dark {
+  background: #333333;
+  color: #ffffff;
+}
+
+/* search box */
+/* line 3, ../scss/modules/_forms.scss */
+.search {
+  width: 100%;
+}
+/* line 6, ../scss/modules/_forms.scss */
+.search h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 11, ../scss/modules/_forms.scss */
+.search input[type="search"] {
+  border: 0;
+  height: 50px;
+  width: 80%;
+  border: 2px solid #00aff0;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+/* line 21, ../scss/modules/_forms.scss */
+.search button {
+  border: 0;
+  background: none;
+  padding: 0;
+  vertical-align: top;
+  margin-left: -4px;
+}
+
 /* LAYOUTS - Page layout styles */
 /* NavBar */
 /* line 3, ../scss/layouts/_nav.scss */
