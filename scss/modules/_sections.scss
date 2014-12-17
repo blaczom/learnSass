@@ -34,3 +34,8 @@ section{
   @include add-background($dark-color);
 }
 
+.section-primary-a{
+  @extend .section-primary;
+  @include add-border(5px, $secondary-color, top)
+}
+
