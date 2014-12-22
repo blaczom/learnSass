@@ -34,3 +34,9 @@
     color:#ffffff;
   }
 }
+
+@mixin add-boxshadow($shadow...){
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}

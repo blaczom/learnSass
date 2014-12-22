@@ -2,6 +2,7 @@
 .block{
   padding:15px;
   margin-bottom:15px;
+  @include add-boxshadow(5px 10px 5px grey);
 
   h3{
     margin-top:0;
